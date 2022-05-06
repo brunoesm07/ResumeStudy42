@@ -1,0 +1,334 @@
+Arquitetura de computadores:
+
+Bit, que vem do inglês BInary Digit ou dígito binário é a menor unidade possível para o armazenamento de informação.
+Como bit é uma unidade muito pequena, costuma-se trabalhar com grupos de 8 bits, essa quantidade agrupada de bits é chamada de byte.
+
+b > bit  |             | Ex: 200 MB e um arquivo com 200 milhoes de bytes
+B > byte |   1B = 8b   |     ou 1600 milhoes de bits
+
+ASCII (American Standard Code for Information Interchange): código surgido no começo da Computação que codifica os caracteres em 7 bits.
+UNICODE: padrão que permite aos computadores representar e manipular, de forma consistente, texto de qualquer sistema de escrita existente.
+UTF-8: nEssa codificação representa os caracteres em pedaços de 8 bits e sua grande vantagem é manter os textos codificados apenas em ASCII 
+(a grande maioria da Web no passado) intactos. Ele tem um tamanho variável e cada caractere pode ocupar 8, 16, 24 ou 32 bits.o número e UNICODE dele.
+
+
+Compilador vs Interpretador
+Código Fonte -> Compilador -> gera o arquivo executável em código de máquina
+Código fonte -> interpretador -> traduz linha e executa linha por linha.
+
+Codigo compilado
+- Vantagens:
+    - Mais rápido;
+    - Corrige os erros antes de compilar
+- Desvantagens:
+    - Limita a execução do código a uma máquina específica;
+    - Passo extra durante o desenvolvimento;
+
+Código Interpretado
+Vantagens: 
+    - Pode ser executado em máquinas variadas;
+    - Otimização/facilidade durante o desenvolvimento;
+Desvantagens:
+    - Mais lento;
+    - Erros corrigidos durante a execução
+
+Memoria nao volatil - guarda informacao mesmo desligado.
+- HD (hard disc)
+- SSD (Solid State Drive)
+- ROM (Read-Only Memory): quando o computador é inicializado, as primeiras informações que ele irá buscar estarão na ROM, por exemplo, a BIOS ( Basic Input/Output System ou sistema básico de entrada/saída). 
+Elas vão ajudá-lo a identificar os dispositivos conectados, como o HD, e carregar o sistema operacional.
+
+Memoria Volatil 
+- RAM (Randon Access Memory)
+
+Processadores
+- Dual core (dois nucleos): duplica a velocidade de execução das instruções do processador
+- Quadri core (quatro nucleos)
+
+Ex: Ao inves de uma RAM de 4 GB de memória, tiver uma de 16 GB significa que vai conseguir executar vários programas ao mesmo tempo.
+
+GPU (Graphics Processing Unit) ou placa de vídeo é a unidade responsável pela renderização dos pixels na tela do computador
+
+Memória Cache: técnica muito importante para otimizar o funcionamento do processador. Utilizada em navegadores, banco de dados e servidores.
+
+Links:
+https://cursos.alura.com.br/course/arquitetura-computadores-funcionamento-programa
+https://youtu.be/oSCVb4Ts-G4
+https://mittechreview.com.br/nos-nao-estamos-preparados-para-o-fim-da-lei-de-moore/
+https://youtu.be/02rvd_7HcFY
+https://tecnoguia.istocks.club/qual-e-a-diferenca-entre-texto-ascii-e-unicode/2021-01-04/#:~:text=ASCII%20padr%C3%A3o%20usa%20um%20intervalo,998%20pontos%20de%20c%C3%B3digo%20endere%C3%A7%C3%A1veis%20.
+
+
+
+Algoritimos e Logica de Programacao:
+
+Links: 
+Otimo artigo sobre conceito - https://www.alura.com.br/artigos/algoritmos-e-logica-de-programacao
+
+
+
+JavaScript
+
+Variaveis
+- let: maneira de declarar variavel quando ela pode ser reatribuida
+- const: maneira de declarar uma variavel com valor constante.
+
+Tipos de dados
+Null : Este tipo de dado representa a ausência intencional de um valor e é representado pela palavra-chave null(sem aspas).
+Undefined : Este tipo de dados é indicado pela palavra-chave undefined(sem aspas). Também representa a ausência de um valor, embora tenha um uso diferente de null.
+
+Math.floor() : retorna (arredonda) para o numero inteiro menor ou igual ao numero fornecido | ex: console.log(Math.floor(5.95); // prints: 5
+Math.ceil() : retorna (arredonda) para o numero inteiro MAIOR ou igual ao numero fornecido | ex: console.log(Math.ceil(43.8)); // prints: 44
+Math.round() : arredonda os numeros do resultado da funcao, porem retorna o valor para o inteiro mais proximo
+Math.random() : gera um número aleatório entre 0 e 1
+Number.isInteger() : determina e o valor passado e um numero inteiro
+.toFixed() : indico o numero de casas decimais que desejo apos a virgula
+.length : retorna o numero de caracteres que compoem a string
+.toUpperCase() : retorna uma string em letras maiusculas
+
+
+
+Links:
+Formatando numeros https://www.alura.com.br/artigos/formatando-numeros-no-javascript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+
+
+O Shell é qualquer programa que forneça uma interface que possibilite ao usuário acessar recursos diretamente do Sistema Operacional, através do Terminal ou da interface gráfica.
+Exemplos de shells de linha de comando no Windows incluem cmd.exe (também conhecido como Prompt de Comando) e PowerShell .
+
+O bash é um exemplo específico de shell, mas também é uma linguagem de comando, por isso é possível programar em bash! 
+
+LINUX
+
+Lista de comandos mais usados no Linux:
+
+Ctrl + L: limpa a tela do terminal
+ls: Lista todos os arquivos do diretório
+ls -l: lista com os detalhes de cada arquivo
+ls -m: lista arquivos e diretórios separados por vírgulas.
+ls -u: lista arquivos e diretórios ordenados pro data de acesso
+ls -p: lista arquivos e diretórios seguidos por uma barra (/)
+df: Mostra a quantidade de espaço usada no disco rígido
+top: Mostra o uso da memória
+cd: Acessa uma determinada pasta (diretório)
+mkdir: Cria um diretório
+rm: Remove um arquivo
+rmdir: Exclui um diretório 
+mv: muda o nome do arquivo | ex: mv programa.c adivinhacao.c
+cat: Abre um arquivo
+cat -e: destaca o termino da linha mostrando o caractere $
+chmod: gerencia permissões
+vi: Abre o editor vi (lê-se viai) para editar/criar arquivos
+diff: compara o conteúdo de dois arquivos e relata a diferença entre eles. | diff [opções] [arquivo1] [arquivo2]
+      -a :: compara os arquivos como arquivos de texto, ainda que não sejam.
+      -b :: ignora diferenças na quantidade de espaço em branco.
+patch: aplica um arquivo diff a um original | patch [ opções ] [ arquivo original [ arquivo de patch ]]
+
+Pipe: '|' é uma forma de redirecionamento (transferência de saída padrão para algum outro destino)
+é usado para combinar dois ou mais comandos, e neste, a saída de um comando atua como entrada para outro comando, e a saída deste comando pode atuar como entrada para o próximo comando e assim por diante. 
+
+grep: procura por trechos de texto (strings) dentro de arquivos ou diretórios e retorna para você em quais arquivos a string foi encontrada, inclusive mostrando a linha em que isso ocorreu.
+
+Variáveis globais ou variáveis de ambiente globais, são variáveis criadas/definidas com o comando export e podem ser utilizadas por multiplos scripts em Shell. 
+PATH: define diretórios de procura por programas executados no shell;
+USER: informa o nome do usuário do shell;
+HOME: informa o caminho do diretório home do usuário;
+LANG: Idioma/Linguagem, especificada como locale;
+PWD: diretório atual;
+TERM: Tipo de terminal atual em uso.
+UID: UID do usuário atual.
+RANDOM: Gera um número aleatório
+
+tr: traduz ou exclui caracteres
+-d , --delete
+exclua caracteres em SET1, não traduza
+
+group: arquivo de grupo de usuários
+
+O comando touch é o comando padrão UNIX/Linux para criar, alterar e modificar os carimbos temporais de um arquivo. Ele só pode criar arquivos vazios.
+Se o arquivo já existir, o comando irá alterar os carimbos de data e hora do arquivo.
+
+-Para criar um novo arquivo utilizando o comando touch, basta utilizar o comando touch seguido do nome do arquivo a ser criado.
+
+-Para criar vários arquivos, utilize o comando touch seguido do nome do arquivo a ser criado separado por espaço.
+
+ 
+Comando cat - derivado da palavra "concatenate"
+
+- Criando novo arquivo de texto: cat > arquivo.txt
+Após criar já pode começar a inserir o texto. Quebra de linha: Enter; Sair do arquivo: CTRL+D
+Para conferir o arquivo, executar o comando ls -1
+
+- Visualizando arquivo de texto: cat arquivo.txt (observe que, diferentemente de quando criamos um arquivo, na visualização não se coloca o ">"
+Visualizar mais de um arquivo: cat *.txt
+
+- Redirecionando conteúdo: cat fonte.txt > destino.txt
+
+- Concatenando diversos arquivos em apenas um: cat fonte1.txt fonte2.txt > destino.txt
+
+- Destacar término de linha: cat -E arquivo.txt
+
+Entendendo as permissões no Linux
+
+No Linux, quando um arquivo ou diretório é criado, algumas permissões são atribuídas a ele automaticamente.
+Essas permissões são divididas em três grupos: O usuário que criou o arquivo (usuário dono), o grupo dono do arquivo (que pode conter vários usuários),
+e as dos demais usuários que não pertencem ao grupo dono.
+
+Essas permissões podem ser de leitura (r, read), escrita (w, write) e execução (x, execute).
+A permissão de leitura (r) permite visualizar o conteúdo de um arquivo ou diretório, já a permissão de escrita (w) serve para alterar o conteúdo de um
+arquivo e diretório.
+A opção de execução serve para tornar o arquivo um executável, ou, em caso de diretórios, para poder acessá-lo e usar comandos, como o cd.
+
+dono (u)
+grupo (g)
+outros usuários (o) 
+
+Links úteis:
+https://www.alura.com.br/artigos/entendendo-as-permissoes-no-linux#:~:text=Essas%20permiss%C3%B5es%20podem%20ser%20de,de%20um%20arquivo%20e%20diret%C3%B3rio.
+
+Extensão .tar
+
+Arquivos .tar são utilizados para consolidar arquivos e pastas em um só, outro aspecto importante dos arquivos .tar é que eles mantém as informações
+do sistema de arquivos, como permissões de usuários, datas de modificação e todas as estruturas de diretório e por isso essa extensão se popularizou
+facilitando o compartilhamento de scripts e arquivos pela internet.
+
+tar [parâmetros] [nome_do_arquivo_tar] [arquivos de origem]
+
+Links Úteis: https://www.hostinger.com.br/tutoriais/comando-tar-linux
+
+Soft Link e Hard Link
+
+Em poucas palavras, um soft link:
+
+- pode cruzar o sistema de arquivos,
+- permite que você vincule entre diretórios,
+- tem número de inode e permissões de arquivo diferentes do arquivo original,
+- as permissões não serão atualizadas,
+- tem apenas o caminho do arquivo original, não o conteúdo.
+
+Criando soft link: ln -s source.file softlink.file
+
+Um Hard link:
+
+- não pode cruzar os limites do sistema de arquivos (ou seja, um hardlink só pode funcionar no mesmo sistema de arquivos),
+- não pode vincular diretórios,
+-tem o mesmo número de inode e permissões do arquivo original,
+-permissões serão atualizadas se alterarmos as permissões do arquivo de origem,
+-tem o conteúdo real do arquivo original, para que você ainda possa visualizar o conteúdo, mesmo se o arquivo original for movido ou removido.
+
+Criando um hardlink chamado "texto.txt" apontando para o arquivo "alvo_hardlink.txt":
+
+$ ln alvo_hardlink.txt texto.txt
+
+
+
+Shell Scripit
+
+Executando um comando no terminal para retornar o id do repositório
+
+arquivo.sh
+
+#!/bin/sh
+git log --pretty=oneline -n5
+
+
+find <startingdirectory> <opções> <termo de busca>
+find: informa que tudo que vem a seguir 'e referente a uma busca de arquivo
+<startingdirectory>: ponto de origem
+
+
+
+
+
+
+
+
+
+
+
+Git
+
+Instalar o Git no Windows é muito fácil. O projeto msysgit tem um dos procedimentos mais simples de instalação. Simplesmente baixe o arquivo exe do instalador a partir da página do GitHub e execute-o:
+https://msysgit.github.com
+
+git init: criar novo repositório
+git status: verifica o estado dos arquivos/repositório (se existe algum para add ou commit)
+git add: adiciona arquivo ou diretório na "staged area" | ex: git add arquivo.txt , git add meu_diretorio
+git commit: git commit meuarquivo.txt -m "minha mensagem de commit"
+git rm: remove arquivo
+git rm -r: remove diretório
+git log: exibe histórico
+rm -rf: apaga reposit'orio | ex: rm -rf pastaxpto
+
+
+Links úteis:
+https://youtu.be/E28J23gCBIs - Principais comandos para terminalls
+http://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+
+
+
+Linguagem C
+
+gcc: compila o código C usando o arquivo de código como um argumento de linha de comando não sinalizado.
+O arquivo executável de saída será chamado a.out.
+
+"": O texto entre aspas duplas é conhecido como string (pense em uma string de caracteres). Todas as strings devem estar entre aspas duplas.
+
+stdio: biblioteca padrao de entrada e saida | #include <stdio.h>
+unistd.h: biblioteca
+int main () { }: bloco de codigos
+char - tabela ASCII
+int: armazena um numero inteiro
+void: declara uma funcao que nao retorna valor ou um ponteiro generico
+printf: inprime na tela | printf("string");     obs: string 'e texto
+\n: quebra de linha
+while: Executa a repetição de um bloco de instruções enquanto uma condição é verdadeira.
+*: ponteiro
+
+Os operadores lógicos são utilizados quando é necessário usar duas ou mais condições dentro da mesma instrução if para que seja tomada uma única decisão cujo resultado será verdadeiro ou falso.
+Os operadores lógicos são:
+&&     (E)
+||       (OU)
+!        (NÂO)
+
+&: Referência (endereço de elemento)
+
+função que retorna inteiros | int main () {
+                            | printf ("OI mundo!");
+retornar                    | return 0;
+                              }
+
+O comando #include e' utilizado para declarar as bibliotecas que ser'ao utilizadas pelo programa.
+Arquivos de bibliotecas sao terminados com a extensao .h
+
+putchar () (put character): a fun;ao putchar() recebe como parametro de entrada um unico valor inteiro. Esse valor sera convertido em caractere e mostrado na tela.
+
+
+rush: arquivo com a logica codada
+ft_putchar:
+main:funcao principal
+
+o que e cada arquivo? ft_putchar, main e rush
+o que e o ptr, str, size? no char
+
+o que e total, signal, idx? no int
+idx (e a posicao)
+
+char: declarando caracter
+void: "vazio"
+
+
+main: funcao principal
+int main ()
+{
+	write (
+	return (0)
+}
+
+ 
+Caracteristicas de uma variavel:
+- toda variavel possui um nome
+- toda variavel possui um tipo
+- toda variavel possui um tamanho
+- toda variavel possui um valor
